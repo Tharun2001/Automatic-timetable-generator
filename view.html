@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="view.js"></script>
+        <link rel="stylesheet" type="text/css" href="view.css" media="screen" /> 
+        
+    </head>
+    <body>
+    <div class="topnav">
+            <a href="index.html">Home</a>
+            <a class="active"  href="view.html">View</a>
+            <a href="Add Faculty/Add Faculty.html">Add Faculty</a>
+            <a href="Add Course/Add Course.html">Add Course</a>
+            <a href="Assign/Assign.html">Assign</a>
+            <a href="Delete/Delete.html">Delete</a>
+    </div>
+    <br>
+    <br>
+    <p id="demo"> </p>
+    <br>
+    <br>
+    <select id = "year">
+        <option style="display:none" > -- select an year -- </option>
+        <option value="I YEAR">I YEAR</option>
+        <option value="II YEAR">II YEAR</option>
+        <option value="III YEAR">III YEAR</option>
+        <option value="IV YEAR">IV YEAR</option>
+    </select>
+    <select id = "dept">
+        <option style="display:none" > -- select a dept -- </option>
+        <option value="CSE">CSE</option>
+        <option value="ECE">ECE</option>
+        <option value="MECH">MECH</option>
+        <option value="EEE">EEE</option>
+        <option value="ECM">ECM</option>
+    </select>
+    <button type="button" class=but onclick="display()">Submit</button>
+    <button type="button" onclick="Back()">Back</button>
+    <button type="button" onclick="CreateNew()">Go Back and Create New</button>
+    <script>
+    function display()
+    {
+        var e = document.getElementById("year");
+        var yr = 0;
+        var year = e.options[e.selectedIndex].value;
+        var f = document.getElementById("dept");
+        var dept = f.options[f.selectedIndex].value;
+        if(year == "I YEAR")
+        {
+            yr = 1;
+        }
+        else if(year == "II YEAR")
+        {
+            yr = 2;
+        }
+        else if(year == "III YEAR")
+        {
+            yr = 3;
+        }
+        else if(year == "IV YEAR")
+        {
+            yr = 4;
+        }
+        console.log(yr,dept);
+        if(yr == 0 || dept == "-- select a dept --")
+        {
+            alert("Invalid");
+        }
+        else
+        {  
+            //location.reload();    
+            func(yr,dept);
+        }
+    }
+        
+    </script>
+    </body>
+</html>
