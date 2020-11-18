@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="Add Course.js"></script>
+        <link rel="stylesheet" type="text/css" href="Add course.css" media="screen" /> 
+    </head>
+    <body>
+            <div class="topnav">
+                    <a href="../index.html">Home</a>
+                    <a href="../view.html">View</a>
+                    <a href="../Add Faculty/Add Faculty.html">Add Faculty</a>
+                    <a class="active" href="Add course.html">Add Course</a>
+                    <a href="../Assign/Assign.html">Assign</a>
+                    <a href="../Delete/Delete.html">Delete</a>
+            </div>
+        
+            <div class="form">
+                <label for="code" >Course code: </label>
+                <span id="error_code" class="error"></span>
+                <br>
+                <input type="text" id="code" style="text-transform:uppercase">
+                
+                <br>
+                <br>
+
+                <label for="cname">Course name: </label>
+                <span id="error_cname" class="error"></span>
+                <br>
+                <input type="text" id="cname" style="text-transform:uppercase" >
+                
+                <br>
+                <br>
+                
+                <label for="numClass">Number of theory classes per week:</label>
+                <span id="error_Class" class="error"></span>
+                <br>
+                <input type="text" id="numClass">
+                
+                <br>
+                <br>
+
+                <label for="numLab">Number of Lab classes per week:</label>
+                <span id="error_Lab" class="error"></span>
+                <br>
+                <input type="text" id="numLab">
+                <br>
+                <span id="Status"></span>
+                <br>
+                <br>
+                <button type="button" id="Submit" onclick="Submit()">Submit</button>
+                <button type="button" class="next" onclick="Next()">Next Course</button>
+            </div>
+            
+    </body>
+</html>

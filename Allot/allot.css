@@ -1,0 +1,39 @@
+.Subjects{
+    position: relative;
+    left: 500px;
+}
+h{
+    font-size: 25px;
+    font-weight: bold;
+    
+}
+input{
+    position: relative;
+    left: 10px;
+}
+.button{
+    position: relative;
+    left: 10px;
+}
+.link
+{
+    font-size: 20px;
+    text-decoration: underline;
+    position: relative;
+    top:50px;
+    left: 300px;
+}
+.Subs{
+  width: 25%;
+  padding: 10px 10px;
+  margin: 1px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.Generate{
+    position: relative;
+    left: 1000px;
+    top: 20px;
+}

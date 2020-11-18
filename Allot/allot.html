@@ -1,0 +1,62 @@
+<html>
+    <head>
+    
+        <link rel="stylesheet" type="text/css" href="allot.css" media="screen" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-3-typeahead/4.0.2/bootstrap3-typeahead.min.js"></script> 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+        <script src="allot.js"></script>
+    </head>
+    <body>
+    <style>
+        .topnav {
+                background-color: #333;
+                overflow: hidden;
+                }
+
+                /* Style the links inside the navigation bar */
+                .topnav a {
+                float: left;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+                }
+
+                /* Change the color of links on hover */
+                .topnav a:hover {
+                background-color: #ddd;
+                color: black;
+                }
+
+                /* Add a color to the active/current link */
+                .topnav a.active {
+                background-color: #4CAF50;
+                color: white;
+                }
+    </style>
+    <div class="topnav">
+            <a href="../index.html">Home</a>
+            <a href="../view.html">View</a>
+    </div>
+    <br>
+    <br>
+        <div id="test">
+        <h>ENTER NUMBER OF SUBJECTS:</h>
+        <input type="text" id="no_sub">
+        <button type="button" id="no_subButton" class=button onclick="no_sub()">Confirm</button>
+        <br>
+        <br>
+        <span id="error" style="color: red;position: relative; left: 500px;"></span>
+        
+        <p id="demo"></p>
+        <br>
+        
+        <a class="link" href="../index.html">&laquo;Go back</a>
+        <p id="generate"></p>
+        <p id="view"></p>    
+        </div>
+        
+    </body>
+</html>

@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="Assign.css" media="screen" /> 
+    </head>
+    <body>
+        <div class="topnav">
+                <a href="../index.html">Home</a>
+                <a href="../view.html">View</a>
+                <a href="../Add Faculty/Add Faculty.html">Add Faculty</a>
+                <a href="../Add course/Add course.html">Add Course</a>
+                <a class="active" href="Assign.html">Assign</a>
+                <a href="../Delete/Delete.html">Delete</a>
+        </div>
+        <div class="form">
+            <select id="fno" onchange="showFac(this)">
+            </select>
+            <p id="msg1"></p>
+            
+            <select id="code" onchange="showCourse(this)">
+            </select>
+            <p id="msg2"></p>
+           
+            <label>Select Slot Type: </label>
+            <select id="SlotType">
+                <option value="">--Select an option--</option>
+                <option value='M'>M</option>
+                <option value='A'>A</option>
+            </select>
+            <br>
+            <span class="error" id="error"></span>
+            <span class="success" id="success"></span>
+            <br>
+            <br>
+            <button type="button" id="Submit" onclick="Submit()">Submit</button>
+        </div>
+    </body>
+    <script src="Assign.js"></script>
+</html>

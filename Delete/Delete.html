@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="Delete.js"></script>
+        <link rel="stylesheet" type="text/css" href="Delete.css" media="screen" />
+    </head>
+    <body>
+        <div class="topnav">
+                <a href="../index.html">Home</a>
+                <a href="../view.html">View</a>
+                <a href="../Add Faculty/Add Faculty.html">Add Faculty</a>
+                <a href="../Add Course/Add Course.html">Add Course</a>
+                <a href="../Assign/Assign.html">Assign</a>
+                <a class="active" href="Delete.html">Delete</a>
+        </div>
+        <br>
+        <br>
+        <select id="option">
+            <option>--Select an option--</option></option>
+            <option value="Faculty">Faculty</option>
+            <option value="Course">Course</option>
+            <option value="Faculty-Course Assignment">Faculty-Course Assignment</option>
+        </select>
+        <button type="button" onclick="get()">Submit</button>
+        <p id="demo"></p>
+      
+    </body>
+    <script>
+        function get()
+        {
+            var e = document.getElementById('option');
+            var option = e.options[e.selectedIndex].value;
+            console.log(option);
+            if(option =="Faculty")
+            {
+                Fac();
+            }
+            else if(option =="Course")
+            {
+                Course();
+            }
+            else if(option =="Faculty-Course Assignment")
+            {
+                FacCourse();
+            }
+        }
+    </script>
+</html>

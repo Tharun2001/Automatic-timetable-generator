@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="Add Faculty.css" media="screen" /> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="Add Faculty.js"></script>
+        
+    </head>
+    <body>
+            <div class="topnav">
+                    <a href="../index.html">Home</a>
+                    <a href="../view.html">View</a>
+                    <a class="active" href="Add Faculty.html">Add Faculty</a>
+                    <a href="../Add Course/Add Course.html">Add Course</a>
+                    <a href="../Assign/Assign.html">Assign</a>
+                    <a href="../Delete/Delete.html">Delete</a>
+            </div>
+        
+            <div class="form">
+                <label for="fno" >Faculty number: </label>
+                <span id="error_fno" class="error"></span>
+                <br>
+                <input type="text" id="fno" style="text-transform:uppercase">
+                
+                <br>
+                <br>
+
+                <label for="fname">Faculty name: </label>
+                <span id="error_fname" class="error"></span>
+                <br>
+                <input type="text" id="fname">
+                <br>
+                <span id="Status"></span>
+                <br>
+                <br>
+                <button type="button" id="Submit" onclick="Submit()">Submit</button>
+                <button type="button" class="next" onclick="Next()">Next Faculty</button>
+            </div>
+            
+    </body>
+</html>
